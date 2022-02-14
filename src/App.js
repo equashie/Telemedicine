@@ -2,6 +2,7 @@ import './App.css';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { Article, Brand, Cta, Navbar } from './Components';
 import { Footer, Blog, Features, Header, What, Possibility,Ourdoctors } from './containers';
+import {Login , Register} from "./Components/login/index";
 
 import React from 'react';
 
@@ -14,6 +15,8 @@ const App = () => {
 
       </div>
       <Brand/>
+      <Login/>
+      <Register/>
       <What/>
       <Features/>
       <Ourdoctors/>

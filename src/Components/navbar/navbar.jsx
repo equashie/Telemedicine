@@ -1,10 +1,11 @@
-import React,{useState} from 'react';
+import React,{useState ,useContext} from 'react';
 import './navbar.css';
 import { RiMenu3Line, RiCloseLin } from 'react-icons/ri';
 import logo from '../../assets/logo.png'
+import myApp from '../../Auth/App';
 
 const Navbar = () => {
-
+  const{ switchToSignin} = useContext(myApp);
   
   return <div className='navbar'>
     <div className='navbar-links'>
@@ -25,7 +26,8 @@ const Navbar = () => {
 
           Sign in
         </p>
-        <button type="button"> Sign Up</button>
+        <button type="button"><a href="#" onClick ={switchToSignin}>Sign Up</a></button>
+        
       </div>
       <div className='navbar-menu'></div>
 
